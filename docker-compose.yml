@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  app:
+    container_name: app
+    build: .
+    ports:
+      - 4200:4200
+    volumes:
+      - .:/app
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
