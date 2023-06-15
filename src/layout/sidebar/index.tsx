@@ -1,3 +1,4 @@
+import { HiOutlineCurrencyDollar, HiOutlineTag, HiOutlineUserGroup } from "react-icons/hi";
 import MenuItem from "../../components/menu-item";
 
 function Sidebar() {
@@ -7,9 +8,9 @@ function Sidebar() {
             <div className="w-full h-1/6">
                 Logo here
             </div>
-            <MenuItem path="/expenses" isActive={false}> Expenses </MenuItem>
-            <MenuItem path="/expenses-categories" isActive={false}> Expenses Categories </MenuItem>
-            <MenuItem path="/residents" isActive={false}> Residents </MenuItem>
+            <MenuItem path="/expenses" isActive={false}>  <HiOutlineCurrencyDollar /> Expenses </MenuItem>
+            <MenuItem path="/expenses-categories" isActive={false}> <HiOutlineTag /> Expenses Categories </MenuItem>
+            <MenuItem path="/residents" isActive={false}> <HiOutlineUserGroup/> Residents </MenuItem>
         </aside>
     )
 }
