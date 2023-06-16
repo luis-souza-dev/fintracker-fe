@@ -1,9 +1,13 @@
+import DetailsSidebar from "../../components/details-sidebar";
+import Table from "../../components/table";
+import PageContainer from "../../layout/page-container";
 
 function ExpensesCategories() {
     return (
-        <>
-            ExpensesCategories works
-        </>
+        <PageContainer>
+            <Table />
+            <DetailsSidebar />
+        </PageContainer>
     )
 }
 
