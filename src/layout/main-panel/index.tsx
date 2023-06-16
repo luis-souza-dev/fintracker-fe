@@ -3,11 +3,9 @@ import { Outlet } from "react-router-dom";
 function MainPanel() {
 
     return (
-        <section className="col-start-2 col-span-full row-span-full bg-[#052636]">
+        <section className="col-start-2 col-span-full h-screen max-h-screen bg-[#052636] overflow-y-hidden">
           <Topbar />
-          <section>
-                <Outlet />
-          </section>
+          <Outlet />
         </section>
     )
 }
